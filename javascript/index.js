@@ -17,12 +17,12 @@ function printTime() {
   setInterval(() => {
     //put a console log inside the interval to check in Chrome if it works.
     //once you have checked it, you can remove it
-    console.log('tick-tock ', minutes + ' : ' + seconds);
-
+    
     const seconds = printSeconds();
     const minutes = printMinutes();
     const milli = printMilliseconds();
-
+    
+    console.log('tick-tock ', minutes + ' : ' + seconds);
     //minutes = 23 => minutes[0] = 2 / minutes[1] = 3
     //seconds = 10  => seconds[0] = 1 / seconds[1] = 0
 
